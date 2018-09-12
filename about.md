@@ -1,18 +1,16 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: About me
+permalink: /aboutme/
 ---
+Cảm ơn bạn đã ghé thăm blog của tôi.
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Tôi là Phạm Văn Tưởng, hiện đang là kỹ sư thiết kế phần cứng tại VNPT Technology. Ngoài công việc chính là thiết kế mạch tôi còn tham gia các dự án mã nguồn mở, các dự án cộng đồng hoặc phát triển các sản phẩm nhỏ trong thời gian rảnh. Blog này được viết sau những giờ làm việc ở công ty, với hai mục đính chính. Một, giúp tôi tổng hợp lại các kiến thức cơ sở về điện tử, lý thuyết trường, kỹ năng phân tích thiết kế mạch cho các sản phẩm. Hai, tôi mong muốn chia sẻ kiến thức tôi tích lũy được cho những ai cần.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Các bạn có thể xem thêm các thông tin khác của tôi tại blog [đây](https://anhvanthe.wordpress.com), [github](https://github.com/anhvanthe) hoặc [Linkedin](https://www.linkedin.com/in/van-tuong-pham-81a5aa59/). Tôi rất vui nếu bạn có thể giúp tôi ‘endorse’ một vài ‘skills’ mà bạn nghĩ rằng tôi có.
 
 
-[jekyll-organization]: https://github.com/jekyll
+Nếu có câu hỏi, bạn có thể để lại comment bên dưới.
+
+Bạn đọc có thể ủng hộ blog qua 'Buy me a cofee' ở góc trên bên trái của blog. 
+
