@@ -3,7 +3,7 @@ layout: page
 title: About me
 permalink: /aboutme/
 ---
-Cảm ơn bạn đã ghé thăm blog của tôi.
+Cảm ơn bạn đã ghé thăm blog của tôi và quan tâm đến tôi là ai.
 
 Tôi là Phạm Văn Tưởng, hiện đang là kỹ sư thiết kế phần cứng tại VNPT Technology. Ngoài công việc chính là thiết kế mạch tôi còn tham gia các dự án mã nguồn mở, các dự án cộng đồng hoặc phát triển các sản phẩm nhỏ trong thời gian rảnh. Blog này được viết sau những giờ làm việc ở công ty, với hai mục đính chính. Một, giúp tôi tổng hợp lại các kiến thức cơ sở về điện tử, lý thuyết trường, kỹ năng phân tích thiết kế mạch cho các sản phẩm. Hai, tôi mong muốn chia sẻ kiến thức tôi tích lũy được cho những ai cần.
 
