@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-permalink: /aboutme/
+permalink: /about/
 ---
 Cảm ơn bạn đã ghé thăm blog của tôi và quan tâm đến tôi là ai.
 

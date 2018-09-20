@@ -45,7 +45,7 @@ print_hi('Tom')
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk]. -->
 
-[About-me]: /aboutme
+[About-me]: /about
 [ml-coban]: https://machinelearningcoban.com
 [step-by-step-tutorial]: https://jekyllrb.com/docs/step-by-step/01-setup/
 
