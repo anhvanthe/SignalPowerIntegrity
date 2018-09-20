@@ -15,6 +15,12 @@
 # in the templates via {{ site.myvariable }}.
 title: Thiết kế phần cứng
 email: your-email@example.com
+
+sass:
+  style: :compressed  # Change to :expanded for debugging
+
+permalink: /:year/:month/:day/:title.html
+
 description: >- # this means to ignore newlines until "baseurl:"
   Nơi bạn có thể tìm thấy những kiến thức từ cơ bản đến nâng cao về thiết kế phần cứng.
   Schematic design-
@@ -22,16 +28,32 @@ description: >- # this means to ignore newlines until "baseurl:"
   Si/PI simulation-
   Measurement
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://sipiviet.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: CeramosHUT
 github_username:  anhvanthe
 
+future: true
+debug: false
+
 # Build settings
 markdown: kramdown
+#
+permalink: pretty
+future: true
+highlighter: rouge
+linenos: true
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+#
 theme: minima
 plugins:
   - jekyll-feed
 
+
+paginate: 10
+paginate_path: "/page:num/"
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
