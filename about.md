@@ -12,5 +12,7 @@ Các bạn có thể xem thêm các thông tin khác của tôi tại blog [đâ
 
 Nếu có câu hỏi, bạn có thể để lại comment bên dưới.
 
-Bạn đọc có thể ủng hộ blog qua 'Buy me a cofee' ở góc trên bên trái của blog. 
+Bạn đọc có thể ủng hộ blog qua [`Buy me a cofee`][BMAC]'' ở góc trên bên trái của blog. 
 
+
+[BMAC]: /buymeacoffee
