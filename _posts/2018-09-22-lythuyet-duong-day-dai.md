@@ -9,6 +9,12 @@ categories: Basic
 
 ---
 
+**Trong bài viết này:** 
+
+
+<a name="-gioi-thieu"></a>
+
+## 1.Giới thiệu
 Hôm nay chúng ta sẽ tìm hiểu về lý thuyết đường dây truyền tải (Transmission Line Theory - TL Theory), một lý thuyết cơ bản trong điện-điện tử nói chung và thiết kế mạch High Speed nói riêng. Khi search trên Google với từ khóa `Transmission Line Theory` tôi nhận được `112,000,000` kết quả trong khi với từ khóa "Mark Zuckerberg" là `30,000,000` kết quả. Điều này chứng tỏ lý thuyết này nhận được sự quan tâm của đông đảo sinh viên, NCS, giảng viên và kỹ sư. Tôi thấy rất nhiều trường giảng dạy về lý thuyết này, cho nhiều môn học khác nhau và dùng trong các ứng dụng khác nhau, cho thấy tầm quan trọng của TL Theory.
 
 <hr>
@@ -23,14 +29,26 @@ Các bạn sinh viên ngành điện, điện tử chắc hẳn sẽ được h�
 <hr>
 <div class="imgcap">
  <img src ="/assets/1_tl/tl_ncp.jpg" align = "center" width = "">
- <div class = "thecap"> TL Theory cho truyền tải điện. </div>
+ <div class = "thecap"> TL Theory cho truyền tải điện. [1] </div>
 </div>
 <hr>
 
+<!-- Khi bạn tăng tần số lên, chẳng hạn 2,000,000 lần -->
+TL trong Highspeed thì sao? Tương tự như thế, các đường [Microstrip] trên mạch là các TL. [Cable đồng trục][coxial] cũng là một TL.
 
+<a name="-dinh-nghia"></a>
+
+
+
+
+[Microstrip]: https://en.wikipedia.org/wiki/Microstrip
+[coxial]: https://en.wikipedia.org/wiki/Coaxial_cable
+
+### Reference
+[1] - 
 
 <!-- 
-- Idea (loss less) Transmission line
+- Idea (loss less) Transmission line model
 - Impedance
 - Rise time
 - Bandwidth
@@ -39,11 +57,3 @@ Các bạn sinh viên ngành điện, điện tử chắc hẳn sẽ được h�
 - Retern Path || Ground
 
  -->
-
- - Idea (loss less) Transmission line
-- Impedance
-- Rise time
-- Bandwidth
-- Reflection
-- Plane and Reference Plane
-- Retern Path || Ground
