@@ -2,10 +2,10 @@
 layout: post
 comments: true
 title:  "Bài mở đầu"
-permalink: /2018/09/17/introduce/
+permalink: /2018/09/17/bai-viet-mo-dau/
 date:   2018-09-18
-tags: General
-categories: General
+tags: Basic
+categories: Basic
 
 ---
 
@@ -59,7 +59,7 @@ Các bạn tham khảo thông tin chi tiết về cấu hình phần cứng trê
  <div class = "thecap"> Hình 2: Block Diagram. </div>
 </div>
 <hr>
-Đây là một thiết kế Open source, do đó các bạn có thể tải về và thoải mái thay đổi, play around với nó. Lưu ý là BBB được thiết kế trên `Allegro/Orcad` là một phần mềm thương mại. Để sửa được thiết kế bạn cần có license. Tôi dùng phần mềm trên công ty để mở. Nếu chỉ để xem, Allegro có bản Viewer, cho phép bạn xem các layer, net. Cách thứ 2 là bạn dùng một phần mềm thương mại khác là Altium để import vào và xem trên Altium. Có một blog viết khá nhiều bài về Altium là [PCBViet][pcbviet] của Nguyễn Sỹ Hậu. Các bạn cần có thể qua bên đó tham khảo. Tôi cũng sẽ có một bài review về các phần mềm thiết kế mạch, các phần mềm mô phỏng trong blog sau.
+Đây là một thiết kế Open source, do đó các bạn có thể tải về và thoải mái thay đổi, play around với nó. Lưu ý là BBB được thiết kế trên `Allegro/Orcad` là một phần mềm thương mại. Để sửa được thiết kế bạn cần có license. Tôi dùng phần mềm trên công ty để mở. Nếu chỉ để xem, Allegro có bản Viewer, cho phép bạn xem các layer, net. Cách thứ 2 là bạn dùng một phần mềm thương mại khác là Altium để import vào và xem trên Altium. Có một blog viết khá nhiều bài về Altium là [PCBViet][pcbviet] của **Nguyễn Sỹ Hậu**. Các bạn cần có thể qua bên đó tham khảo. Tôi cũng sẽ có một bài review về các phần mềm thiết kế mạch, các phần mềm mô phỏng trong blog sau.
 
 Quay trở lại với mạch BBB, tôi chụp lại các layer của board như hình 2. Hình 3 là ảnh chụp một số tín hiệu RAM (DDR3) và hình 4 là các đường tín hiệu vi sai (differential pair)
 <hr>

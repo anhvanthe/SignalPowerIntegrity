@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "Lý thuyết đường dây truyền tải"
-permalink: /2018/09/22/tl/
+permalink: /2018/09/22/ly-thuyet-duong-day-truyen-tai/
 date:   2018-09-22
 tags: Terms
 categories: Basic
