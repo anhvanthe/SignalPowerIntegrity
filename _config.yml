@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Thiết kế phần cứng
-email: your-email@example.com
+email: phamtuongbk999[@]gmail[dot]com
 
 sass:
   style: :compressed  # Change to :expanded for debugging
@@ -28,7 +28,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Si/PI simulation-
   Measurement
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://sipiviet.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://sipiviet.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: CeramosHUT
 github_username:  anhvanthe
 
