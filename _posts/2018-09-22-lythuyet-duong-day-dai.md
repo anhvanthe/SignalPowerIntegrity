@@ -11,10 +11,16 @@ categories: Basic
 
 **Trong bài viết này:** 
 
+- [1. Giới thiệu](#-gioi-thieu)
+- [2. Định nghĩa](#-dinh-nghia)
+- [3. Mô hình toán](#-mo-hinh-toan)
+- [4. Trở kháng đặc trưng](#-tro-khang-dac-trung)
+- [5. Tóm tắt](#-tom-tat)
+- [6. Reference](#-Reference)
 
 <a name="-gioi-thieu"></a>
 
-## 1.Giới thiệu
+## 1. Giới thiệu
 Hôm nay chúng ta sẽ tìm hiểu về lý thuyết đường dây truyền tải (Transmission Line Theory - TL Theory), một lý thuyết cơ bản trong điện-điện tử nói chung và thiết kế mạch High Speed nói riêng. Khi search trên Google với từ khóa `Transmission Line Theory` tôi nhận được `112,000,000` kết quả trong khi với từ khóa "Mark Zuckerberg" là `30,000,000` kết quả. Điều này chứng tỏ lý thuyết này nhận được sự quan tâm của đông đảo sinh viên, NCS, giảng viên và kỹ sư. Tôi thấy rất nhiều trường giảng dạy về lý thuyết này, cho nhiều môn học khác nhau và dùng trong các ứng dụng khác nhau, cho thấy tầm quan trọng của TL Theory.
 
 <hr>
@@ -120,9 +126,9 @@ Z_o = \sqrt{ \frac{R' + j\omega L'}{G' + j\omega C'} }
 là trở kháng đặc trưng.
 
 <a name="-tro-khang-dac-trung"></a>
-## 4.Trở kháng đặc trưng
+## 4. Trở kháng đặc trưng
 <!-- Để hiểu rõ hơn về **Trở kháng đặc trưng** (characteristic impedance) -->
-Trở kháng đặc trưng (characteristic impedance), thường được gọi vắn tắt là trở kháng đã gây ra nhiều hiểu lầm và sự lẫn lộn cho nhiều kỹ sư. Khi nói: Trở kháng đường dây HDMI là 90\\(\Omega \\)  **thì có nghĩa là đường tín hiệu đó có điện trở là 90 Ohm hay trở kháng đặc trưng của đường truyền tín hiệu là 90\\(\Omega \\)?**
+Trở kháng đặc trưng (characteristic impedance), thường được gọi vắn tắt là trở kháng đã gây ra nhiều hiểu lầm và sự lẫn lộn cho nhiều kỹ sư. Khi nói: Trở kháng đường dây HDMI là 100\\(\Omega \\)  **thì có nghĩa là đường tín hiệu đó có điện trở là 90 Ohm hay trở kháng đặc trưng của đường truyền tín hiệu là 100\\(\Omega \\)?**
 
 Nhiều bạn nói ngay được câu trả lời nằm ở vế sau. Như tôi, dù chưa biết gì về TL và Trở kháng đặc trưng cũng có thể suy luận được là vế sau (vì điện trở chỉ khoảng vài m\\(\Omega \\)).
 
@@ -147,24 +153,66 @@ Z_o = \frac{R' + j\omega L'}{\gamma} = \sqrt{ \frac{R' + j\omega L'}{G' + j\omeg
 \\]
 như đã nêu ra ở mục 3.
 
-Ta thấy, \\(Z_o \\) phụ thuộc vào đặc trưng của đường dẫn \\(R', G', L', C' \\) và tần số của tín hiệu (\\(\omega = 2\pi f \\) ).
+Ta thấy, \\(Z_o \\) phụ thuộc vào đặc tính của đường dẫn \\(R', G', L', C' \\) và tần số của tín hiệu (\\(\omega = 2\pi f \\) ). 
+\\(Z_o \\) không phụ thuộc vào tải. 
+
+Quay trở lại câu hỏi ở trên, yêu cầu trở kháng đường dây HDMI là 100\\(\Omega \\), ta phải thiết kế (độ rộng đường mạch và [stack-up][stackup]) sao cho trở kháng đặc trưng của đường truyền HDMI là 100\\(\Omega \\). 
+
+Công thức biễu diễn **Trở kháng đặc trưng** ở trên là công thức tổng hợp, chứa các thông số đường truyền. Xét trường hợp lý tưởng \\(R' = 0, G' = 0 \\), người ta gọi là **đường truyền không tổn hao** (The lossless transmission line). Khi đó:
+\\[
+Z_o = \sqrt{\frac{L'}{C'}}
+\\]
+
+**Trở kháng đặc trưng** của trường truyền không tổn hao chỉ phụ thuộc vào các thông số \\(L', C' \\).
+
+Ví dụ 1:
+
+Tính toán trở kháng của một TL không tổn hao có thông số C' = 3.3pF, L' = 8.25nH.
+
+Kq: \\(Z_o = 50\Omega\\)
 
 
+Trong thực tế thiết kế, bạn sẽ không gặp vấn đề như **Ví dụ 1**, mà là bài toán ngược lại và tất nhiên sẽ phức tạp hơn chút: Bạn biết trở kháng đường dây yêu cầu, TL của bạn là một Microstrip Line, bạn vật liệu làm PCB, độ dày,... Công việc cần làm là tính toán độ rộng đường dây để bạn layout đạt được trở kháng yêu cầu.
 
-**(Còn tiếp)**
+Ví dụ 2:
+Đường tín hiệu bạn đang layout yêu cầu đạt trở kháng đặc trưng \\(Z_o = 50\Omega\\) chạy trên lớp TOP. Lớp Reference là lớp thứ 2 (Plane GND). Vật liệu PCB là FR-4 có `Dielectric constant` (hằng số điện môi) \\(\epsilon_r = 4\\). Chiều cao lớp điện môi là h = 0.2mm. Tính toán độ rộng đường dây (w) để TL đạt được trở kháng đặc trưng yêu cầu.
+
+<hr>
+<div class="imgcap">
+ <img src ="/assets/1_tl/tl_ms.jpg" align = "center" width = "">
+ <div class = "thecap"> Hình 6: Sóng đến và sóng phản xạ trên TL </div>
+</div>
+<hr>
+
+
+Cách nhanh nhất để tính toán độ rộng đường dây là dùng các công cụ tính toán online như:
+
+* [Online tool](https://www.pasternack.com/t-calculator-coax-cutoff.aspx)
+* [Offline tool - Saturn](https://www.saturnpcb.com/pcb_toolkit/)
+
+Bạn tự tìm ra đáp án của mình và comment ở phần Comments nếu muốn trao đổi thêm nhé :D 
+
+<a name="-tom-tat"></a>
+## 5. Tóm tắt
+* Lý thuyết về đường truyền tín hiệu, đường truyền tín hiệu không tổn hao và ứng dụng thực tế.
+* Cơ sở lý thuyết cho thiết kế mạch tốc độ cao
+
+
+<a name="-Reference"></a>
+## 6. Reference
+[1] - Understanding Signal Integrity - Stephen C. Thierauf
+
+[2] - Signal and Power Integrity - Simplified 2nd - Eric Bogatin
+
+[3] - [https://sites.google.com/site/ncpdhbkhn/bai-giang/ly-thuyet-mach](https://sites.google.com/site/ncpdhbkhn/bai-giang/ly-thuyet-mach)
+
+[4] - [http://www.emtalk.com/mscalc.php](http://www.emtalk.com/mscalc.php)
 
 
 
 [Microstrip]: https://en.wikipedia.org/wiki/Microstrip
 [coxial]: https://en.wikipedia.org/wiki/Coaxial_cable
-
-## Reference
-[1] - Understanding Signal Integrity - Stephen C. Thierauf
-
-[2] - Signal and Power Integrity - Simplified 2nd - Eric Bogatin
-
-[3] - https://sites.google.com/site/ncpdhbkhn/bai-giang/ly-thuyet-mach
-
+[stackup]: http://www.hottconsultants.com/techtips/pcb-stack-up-1.html
 <!-- 
 - Idea (loss less) Transmission line model
 - Impedance
