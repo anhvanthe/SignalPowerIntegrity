@@ -16,7 +16,7 @@ Cụ thể hơn:
 
 * Nếu bạn sửa chữa nội dung bài viết, bao gồm thêm, bớt hoặc viết tiếp xin liên hệ với tác giả.
 
-Mọi vấn đề liên quan đến việc sao chép, đăng tải, sử dụng bài viết, cũng như trao đổi, cộng tác, xin vui lòng liên hệ với tôi tại địa chỉ email: **phamtuongbk999[@]gmail.com**.
+Mọi vấn đề liên quan đến việc sao chép, đăng tải, sử dụng bài viết, cũng như trao đổi, cộng tác, xin vui lòng liên hệ với tôi tại địa chỉ email: **phamtuongbk999[@]gmail[.]com**.
 
 Tôi xin chân thành cảm ơn!
 
