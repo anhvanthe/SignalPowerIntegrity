@@ -34,22 +34,27 @@ Phép biến đổi Fourier chuyển một hàm tuần hoàn theo thời gian th
 
 <hr>
 <div class="imgcap">
- <img src ="/assets/2/2_fourier_series.png" align = "center" width = "">
+ <img src ="/assets/2/2_fs_sin.png" align = "center" width = "">
  <div class = "thecap"> Hình 2: Phép biến đổi Fourier của tín hiệu sin [2] </div>
 </div>
 <hr>
 
 Ta thấy, tín hiệu sin được biểu diễn theo tần số là 2 gạch đứng tại vị trí tương ứng với tần số của tín hiệu, chiều cao bằng độ lớn của tín hiệu sin. 
 
-Miền tần số ...
+Trong thực tế, ta chỉ xét các tín hiệu từ t=0 trở đi (Một chút lý thuyết liên quan đến hệ LTI), do đó ta chỉ xét nửa bên phải của hình 2.
+
+Cơ sở toán học đã đủ, chúng ta cùng nhau đi khám phá **Miền tần số** là gì.
+
+<!-- Miền tần số, theo định nghĩa -->
+
+...
+
+(typing)
 
 
-
-
-
-<a name="-dinh-nghia"></a>
+<!-- <a name="-dinh-nghia"></a>
 ## 2. 
-
+ -->
 
 
 
