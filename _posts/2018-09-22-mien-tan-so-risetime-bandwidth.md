@@ -41,11 +41,17 @@ Phép biến đổi Fourier chuyển một hàm tuần hoàn theo thời gian th
 
 Ta thấy, tín hiệu sin được biểu diễn theo tần số là 2 gạch đứng tại vị trí tương ứng với tần số của tín hiệu, chiều cao bằng độ lớn của tín hiệu sin. 
 
-Trong thực tế, ta chỉ xét các tín hiệu từ t=0 trở đi (Một chút lý thuyết liên quan đến hệ LTI), do đó ta chỉ xét nửa bên phải của hình 2.
+Trong thực tế, ta chỉ xét các tín hiệu từ t=0 trở đi (tần số không thể là số âm), do đó ta chỉ xét nửa bên phải của hình 2.
 
 Cơ sở toán học đã đủ, chúng ta cùng nhau đi khám phá **Miền tần số** là gì.
 
-<!-- Miền tần số, theo định nghĩa -->
+Miền tần số (frequency domain), theo định nghĩa dùng để phân tích các hàm, tín hiệu toán học theo biến số là tần số. Miền tần số hoàn toàn là trong tưởng trí tưởng tượng ra, là giả thiết, thuần túy toán học, chỉ có miền thời gian là có thực. Theo [3], Eric Bogatin viết: "The time domain is the real world. It is the only domain that actually exists."
+
+Miền tần số được chuyển đổi từ miền thời gian thông qua phép biến đổi Fourier. Có một số phương pháp thực hiện như:
+
+* Fourier Integral (FI)
+* Discrete Fourier Transform (DFT)
+* Fast Fourier Transform (FFT)
 
 ...
 
@@ -62,6 +68,8 @@ Cơ sở toán học đã đủ, chúng ta cùng nhau đi khám phá **Miền t�
 [1] https://en.wikipedia.org/wiki/Fourier_series
 
 [2] https://www.astro.umd.edu/~lgm/ASTR410/ft_ref2.pdf
+
+[3]- Signal and Power Integrity - Simplified 2nd - Eric Bogatin
 
 
 <!-- ========================== -->
