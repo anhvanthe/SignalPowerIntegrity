@@ -47,11 +47,43 @@ Cơ sở toán học đã đủ, chúng ta cùng nhau đi khám phá **Miền t�
 
 Miền tần số (frequency domain), theo định nghĩa dùng để phân tích các hàm, tín hiệu toán học theo biến số là tần số. Miền tần số hoàn toàn là trong tưởng trí tưởng tượng ra, là giả thiết, thuần túy toán học, chỉ có miền thời gian là có thực. Theo [3], Eric Bogatin viết: "The time domain is the real world. It is the only domain that actually exists."
 
+Nhờ có miền tần số mà các tín hiệu được biểu diễn đơn giản hơn. Như tín hiệu xung vuông 1ns trên hình 3, bao gồm thành phần cơ bản (fundamental) tại tần số 100MHz, các hài bậc lẻ tại 300MHz, 500MHz,...
+
+<hr>
+<div class="imgcap">
+ <img src ="/assets/2/2_square.PNG" align = "center" width = "">
+ <div class = "thecap"> Hình 3: Tín hiệu xung vuông 1ns </div>
+</div>
+<hr>
+
 Miền tần số được chuyển đổi từ miền thời gian thông qua phép biến đổi Fourier. Có một số phương pháp thực hiện như:
 
 * Fourier Integral (FI)
 * Discrete Fourier Transform (DFT)
 * Fast Fourier Transform (FFT)
+
+Phép biến đổi tích phân Fourier: là kỹ thuật toán học chuyển đổi một biểu thức toán học lý tưởng trong miền thời gian thành một hàm toán mới trên miền tần số. FI hay còn gọi là CFI (Continuous Fourier transform - Biến đổi Fourier liên tục)
+
+Trong thực tế, chúng ta không nhìn thấy tín hiệu biến đổi liên tục theo thời gian, mà chỉ thấy các điểm rời rạc được đo liên tục trong một chu kì T. Lấy ví dụ là một tín hiệu clock có chu kì 1ns, có biên độ 1V. Để biểu diễn một chu kì của tín hiệu này, ta cần đo đo liên tục 1000 điểm cách nhau 1ps như hình 4.
+
+<hr>
+<div class="imgcap">
+ <img src ="/assets/2/2_1ns_pulse.PNG" align = "center" width = "">
+ <div class = "thecap"> Hình 4: Tín hiệu xung vuông 1ns được đo liên tục và biểu diễn theo thời gian</div>
+</div>
+<hr>
+
+Để chuyển tín hiệu trên hình 4 sang miền tần số, ta sử dụng kỹ thuật số để tính toán (thay vì sử dụng tích phân như FI)
+Đó là ý tưởng của phương pháp DFT. 
+
+<hr>
+<div class="imgcap">
+ <img src ="/assets/2/2_1ns_pulse_fd.PNG" align = "center" width = "">
+ <div class = "thecap"> Hình 5: Tín hiệu xung vuông 1ns được đo liên tục và biểu diễn trên miền tần số</div>
+</div>
+<hr>
+
+
 
 ...
 
