@@ -11,9 +11,14 @@ categories: Basic
 
 **Trong bài viết này:** 
 
+- [1. Miền tần số - Miền thời g](#-mien-tan-so-mien-thoi-gian)
+- [2. Risetime](#-risetime)
+- [3. Bandwidth](#-bandwidth)
+- [4. 
+- [5. Tóm tắt](#-tom-tat)
+- [6. Reference](#-Reference)
 
-
-<a name="-gioi-thieu"></a>
+<a name="-mien-tan-so-mien-thoi-gian"></a>
 
 ## 1. Miền thời gian - Miền tần số
 <!-- Trong bài viết này tôi trình bày về miền thời gian và  -->
@@ -73,7 +78,7 @@ Trong thực tế, chúng ta không nhìn thấy tín hiệu biến đổi liên
 </div>
 <hr>
 
-Để chuyển tín hiệu trên hình 4 sang miền tần số, ta sử dụng kỹ thuật số để tính toán (thay vì sử dụng tích phân như FI)
+Để chuyển tín hiệu trên hình 4 sang miền tần số, ta sử dụng kỹ thuật số để tính toán (thay vì sử dụng tích phân như FI).
 Đó là ý tưởng của phương pháp DFT. 
 
 <hr>
@@ -84,17 +89,22 @@ Trong thực tế, chúng ta không nhìn thấy tín hiệu biến đổi liên
 <hr>
 
 
-
-...
-
-(typing)
+FFT, ý tưởng giống DFT, ngoại trừ sử dụng một gải thuật **đại số ma trận** để tính toán giá trị biên độ. Nếu số điểm tính toán là bội của 2, ví dụ 256, 1024,... thì tốc độ tính toán sẽ nhanh hơn DFT từ 100 đến 1000 lần.
 
 
-<!-- <a name="-dinh-nghia"></a>
-## 2. 
- -->
+<a name="-risetime"></a>
 
+## 2. Rise-time
+Rise Time cho biết thời gian tín hiệu chuyển tiếp từ trạng thái thấp sang trạng thái cao. Theo định nghĩa, rise time là khoảng thời gian tín hiệu đạt 10% đến 90% độ lớn của tín hiệu đó. Người ta gọi là 10-90 rise time. 
 
+<hr>
+<div class="imgcap">
+ <img src ="/assets/2/2_risetime.png" align = "center" width = "">
+ <div class = "thecap"> Hình 6: Định nghĩa rise time </div>
+</div>
+<hr>
+
+Có một số tài liệu định nghĩa khoảng thời gian từ 20% đến 80% của độ lớn tín hiệu.
 
 ## Reference
 [1] https://en.wikipedia.org/wiki/Fourier_series
