@@ -14,9 +14,8 @@ categories: Basic
 - [1. Miền tần số - Miền thời g](#-mien-tan-so-mien-thoi-gian)
 - [2. Risetime](#-risetime)
 - [3. Bandwidth](#-bandwidth)
-- [4. 
-- [5. Tóm tắt](#-tom-tat)
-- [6. Reference](#-Reference)
+- [4. Tóm tắt](#-tom-tat)
+- [5. Reference](#-Reference)
 
 <a name="-mien-tan-so-mien-thoi-gian"></a>
 
@@ -73,7 +72,7 @@ Trong thực tế, chúng ta không nhìn thấy tín hiệu biến đổi liên
 
 <hr>
 <div class="imgcap">
- <img src ="/assets/2/2_1ns_pulse.PNG" align = "center" width = "">
+ <img src ="/assets/2/2_1ns_pulse.png" align = "center" width = "">
  <div class = "thecap"> Hình 4: Tín hiệu xung vuông 1ns được đo liên tục và biểu diễn theo thời gian</div>
 </div>
 <hr>
@@ -83,7 +82,7 @@ Trong thực tế, chúng ta không nhìn thấy tín hiệu biến đổi liên
 
 <hr>
 <div class="imgcap">
- <img src ="/assets/2/2_1ns_pulse_fd.PNG" align = "center" width = "">
+ <img src ="/assets/2/2_1ns_pulse_fd.png" align = "center" width = "">
  <div class = "thecap"> Hình 5: Tín hiệu xung vuông 1ns được đo liên tục và biểu diễn trên miền tần số</div>
 </div>
 <hr>
@@ -95,18 +94,56 @@ FFT, ý tưởng giống DFT, ngoại trừ sử dụng một gải thuật **đ
 <a name="-risetime"></a>
 
 ## 2. Rise-time
-Rise Time cho biết thời gian tín hiệu chuyển tiếp từ trạng thái thấp sang trạng thái cao. Theo định nghĩa, rise time là khoảng thời gian tín hiệu đạt 10% đến 90% độ lớn của tín hiệu đó. Người ta gọi là 10-90 rise time. 
+Rise Time (RT) cho biết thời gian tín hiệu chuyển tiếp từ trạng thái thấp sang trạng thái cao. Theo định nghĩa, rise time là khoảng thời gian tín hiệu đạt 10% đến 90% độ lớn của tín hiệu đó. Người ta gọi là 10-90 rise time. 
 
 <hr>
 <div class="imgcap">
- <img src ="/assets/2/2_risetime.png" align = "center" width = "">
+ <img src ="/assets/2/2_risetime.PNG" align = "center" width = "">
  <div class = "thecap"> Hình 6: Định nghĩa rise time </div>
 </div>
 <hr>
 
-Có một số tài liệu định nghĩa khoảng thời gian từ 20% đến 80% của độ lớn tín hiệu.
 
-## Reference
+Có một số tài liệu định nghĩa khoảng thời gian từ 20% đến 80% của độ lớn tín hiệu. Thông số rise time là một thông số quan trọng đối với các tín hiệu high speed. 
+
+
+
+<a name="-bandwidth"></a>
+
+## 3. Bandwidth
+Bandwidth (BW) và Rise time (RT) có mối quan hệ chặt chẽ với nhau. Rise time sẽ giới hạn BW của tín hiệu theo công thức:
+
+\\[
+BW = 0.35 / RT
+\\]
+
+Thông thường, RT cỡ ns (nano giây) hoặc ps (pico giây), nên BW cỡ GHz.
+
+Thông số RT của một tín hiệu có thể lấy từ datasheet của nhà sản xuất, như hình 7.
+
+<hr>
+<div class="imgcap">
+ <img src ="/assets/2/2_risetime_table.PNG" align = "center" width = "">
+ <div class = "thecap"> Hình 7: Thông số rise time của IC LAN8710A </div>
+</div>
+<hr>
+
+Theo thông số từ Hình 7, bandwidth của tín hiệu RMII là: \\(BW = 0.35/5ns = 0.07GHz = 70MHz\\)
+
+Quay lại schematic của BBB, tín hiệu  **MII1_TXCLK** là tín hiệu clock 50MHz từ AM3358 đưa tới LAN8710A. Với rise time và bandwidth như vậy, clock 50MHz là phù hợp. Giả sử muốn đẩy tốc độ lên 1000Mbps, sử dụng các chuẩn như GMII, RGMII thì cũng không được, do clock của RGMII là 125MHz. (Tất nhiên là sẽ phải đổi PHY rồi).
+
+<a name="-tom-tat"></a>
+## 4. Tóm tắt
+Bài viết này trình bày những khái niệm cơ bản của SI:
+* Miền tần số, miền thời gian
+* Rise time
+* Bandwidth
+
+
+
+<a name="-reference"></a>
+
+## 5. Reference
 [1] https://en.wikipedia.org/wiki/Fourier_series
 
 [2] https://www.astro.umd.edu/~lgm/ASTR410/ft_ref2.pdf
