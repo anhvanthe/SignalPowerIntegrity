@@ -11,7 +11,7 @@ categories: Basic
 
 **Trong bài viết này:** 
 
-- [1. Miền tần số - Miền thời g](#-mien-tan-so-mien-thoi-gian)
+- [1. Miền tần số - Miền thời gian](#-mien-tan-so-mien-thoi-gian)
 - [2. Risetime](#-risetime)
 - [3. Bandwidth](#-bandwidth)
 - [4. Tóm tắt](#-tom-tat)
@@ -55,7 +55,7 @@ Nhờ có miền tần số mà các tín hiệu được biểu diễn đơn gi
 
 <hr>
 <div class="imgcap">
- <img src ="/assets/2/2_square.PNG" align = "center" width = "">
+ <img src ="/assets/2/2_square.png" align = "center" width = "">
  <div class = "thecap"> Hình 3: Tín hiệu xung vuông 1ns </div>
 </div>
 <hr>
